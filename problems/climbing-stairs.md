@@ -88,19 +88,11 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| c  | 0 ms | 5.3 MB | 2021/07/26 11:54 |
+|   |  |  | 1970/01/01 8:00 |
 
-```c
+```
 
-int climbStairs(int n){
-       int p = 0, q = 0, r = 1;
-    for (int i = 1; i <= n; ++i) {
-        p = q;
-        q = r;
-        r = p + q;
-    }
-    return r;
-}
+
 
 ```
 ## My Notes - 我的笔记

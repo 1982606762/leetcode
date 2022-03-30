@@ -116,33 +116,11 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| javascript  | 76 ms | 40.2 MB | 2021/07/26 15:49 |
+|   |  |  | 1970/01/01 8:00 |
 
-```javascript
+```
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
-var hasCycle = function(head) {
-    if(!head)return false;
-    let fast = head.next;
-    let slow = head;
-    while(fast)
-    {
-        if(fast == slow)return true;
-        fast = fast?.next?.next;
-        slow = slow.next;
-    }
-    return false;
-};
+
 
 ```
 ## My Notes - 我的笔记
