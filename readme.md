@@ -4,14 +4,14 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/95/2573-Solved/Total-blue.svg">
-  <img src="https://img.shields.io/badge/Easy-50-green.svg">
-  <img src="https://img.shields.io/badge/Medium-38-orange.svg">
+  <img src="https://img.shields.io/badge/97/2573-Solved/Total-blue.svg">
+  <img src="https://img.shields.io/badge/Easy-51-green.svg">
+  <img src="https://img.shields.io/badge/Medium-39-orange.svg">
   <img src="https://img.shields.io/badge/Hard-7-red.svg">
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/03/30 19:31</b>
+  <b>Last updated: 2022/03/31 13:37</b>
   <br>
 </p>
 
@@ -31,6 +31,8 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 # All Accepted Problems
 |  #  | Title |  Title-CN  | Difficulty | Last Submission Time |
 |:---:|:-----:|:-----:|:----------:|:----------:|
+| 面试题 02.07 | [Intersection of Two Linked Lists LCCI](problems/intersection-of-two-linked-lists-lcci.md) | [链表相交](problems/intersection-of-two-linked-lists-lcci.md) | ![](./imgs/easy.png) | 2022/03/31 13:02
+| 24 | [Swap Nodes in Pairs](problems/swap-nodes-in-pairs.md) | [两两交换链表中的节点](problems/swap-nodes-in-pairs.md) | ![](./imgs/medium.png) | 2022/03/31 10:17
 | 206 | [Reverse Linked List](problems/reverse-linked-list.md) | [反转链表](problems/reverse-linked-list.md) | ![](./imgs/easy.png) | 2022/03/30 14:04
 | 707 | [Design Linked List](problems/design-linked-list.md) | [设计链表](problems/design-linked-list.md) | ![](./imgs/medium.png) | 2022/03/30 13:46
 | 203 | [Remove Linked List Elements](problems/remove-linked-list-elements.md) | [移除链表元素](problems/remove-linked-list-elements.md) | ![](./imgs/easy.png) | 2022/03/14 19:21
@@ -136,14 +138,14 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/95/2573-Solved/Total-blue.svg">
-  <img src="https://img.shields.io/badge/Easy-50-green.svg">
-  <img src="https://img.shields.io/badge/Medium-38-orange.svg">
+  <img src="https://img.shields.io/badge/97/2573-Solved/Total-blue.svg">
+  <img src="https://img.shields.io/badge/Easy-51-green.svg">
+  <img src="https://img.shields.io/badge/Medium-39-orange.svg">
   <img src="https://img.shields.io/badge/Hard-7-red.svg">
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/03/30 19:31</b>
+  <b>Last updated: 2022/03/31 13:37</b>
   <br>
 </p>
 
@@ -163,6 +165,8 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 # All Accepted Problems
 |  #  | Title |  Title-CN  | Difficulty | Last Submission Time |
 |:---:|:-----:|:-----:|:----------:|:----------:|
+| 面试题 02.07 | [Intersection of Two Linked Lists LCCI](problems/intersection-of-two-linked-lists-lcci.md) | [链表相交](problems/intersection-of-two-linked-lists-lcci.md) | ![](./imgs/easy.png) | 2022/03/31 13:02
+| 24 | [Swap Nodes in Pairs](problems/swap-nodes-in-pairs.md) | [两两交换链表中的节点](problems/swap-nodes-in-pairs.md) | ![](./imgs/medium.png) | 2022/03/31 10:17
 | 206 | [Reverse Linked List](problems/reverse-linked-list.md) | [反转链表](problems/reverse-linked-list.md) | ![](./imgs/easy.png) | 2022/03/30 14:04
 | 707 | [Design Linked List](problems/design-linked-list.md) | [设计链表](problems/design-linked-list.md) | ![](./imgs/medium.png) | 2022/03/30 13:46
 | 203 | [Remove Linked List Elements](problems/remove-linked-list-elements.md) | [移除链表元素](problems/remove-linked-list-elements.md) | ![](./imgs/easy.png) | 2022/03/14 19:21

@@ -84,24 +84,11 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 8 ms | 8.4 MB | 2020/03/15 16:22 |
+|   |  |  | 1970/01/01 8:00 |
 
-```cpp
+```
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
-class Solution {
-public:
-    void deleteNode(ListNode* node) {
-       *node=*(node->next);
-    }
-};
+
 
 ```
 ## My Notes - 我的笔记

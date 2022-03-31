@@ -117,66 +117,10 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 276 ms | 11.4 MB | 2020/07/08 21:38 |
+|   |  |  | 1970/01/01 8:00 |
 
-```cpp
+```
 
-class Solution {
-    //预处理字符位置的优先队列
-    priority_queue<int, vector<int>, greater<int>> pq[10];
-    
-    int st[30001*4]; //线段树所需的数组
-    //更新线段树的代码
-    void update(int root, int L, int R, int goal) {
-        st[root] += 1;
-        if(L == R) {
-            return ;
-        }
-        int mid = (L+R)>>1;
-        if(goal <= mid) {
-            update(root<<1, L, mid, goal);
-        } else {
-            update(root<<1|1, mid+1, R, goal);
-        } 
-    }
-    //线段树查询代码
-    int query(int root, int L, int R, int goal) {
-        if(R == goal) {
-            return st[root];
-        }
-        int mid = (L+R)>>1;
-        if(mid < goal) {
-            return st[root<<1] + query(root<<1|1, mid+1, R, goal);
-        }
-        return query(root<<1, L, mid, goal);
-    }
-public:
-    string minInteger(string num, int k) {
-        memset(st, 0, sizeof(st));
-        //处理字符位置
-        for(int i = 0; i < num.size(); i++) {
-            pq[num[i]-'0'].push(i);
-        }
-        string anw;
-        while(anw.size() < num.size()) {
-            for(int i = 0; i < 10; i++) { //枚举字符
-                if(pq[i].size() <= 0) { 
-                    continue;
-                }
-                //pq[i].top()为当前字符最靠近目标位置的下标
-                int cost = pq[i].top() - query(1, 1, 30000, pq[i].top()+1);
-                if(cost <= k) {
-                    k -= cost;
-                    anw += char(i+'0');
-                    update(1, 1, 30000, pq[i].top()+1);
-                    pq[i].pop();
-                    break;
-                }
-            }
-        }
-        return anw;
-    }
-};
 
 
 ```

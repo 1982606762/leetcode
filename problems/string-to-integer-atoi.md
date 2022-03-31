@@ -176,30 +176,11 @@ Since 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final resu
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 4 ms | 8.2 MB | 2019/11/02 20:03 |
+|   |  |  | 1970/01/01 8:00 |
 
-```cpp
+```
 
-class Solution {
-public:
-	int myAtoi(string str) {
-		int i = 0;//位置
-		long long res = 0;//输出结果
-		int bol = 1;//符号
-		while (i < str.size() && str[i] == ' ')++i;//找到第一个非空格的字符
-		if (i == str.size())return 0;
-		if (str[i] == '-') { bol = -1; ++i; }//运算符正负号
-		else if (str[i] == '+') { bol = 1; ++i; }
-		while (i < str.size() && str[i] >= '0' && str[i] <= '9') {
-			res = res * 10 + str[i++] - '0';
-			if (res >= 2147483648) {
-				if (bol == 1)return INT_MAX;
-				else return INT_MIN;
-			}
-		}
-		return res * bol;
-	}
-};
+
 
 ```
 ## My Notes - 我的笔记

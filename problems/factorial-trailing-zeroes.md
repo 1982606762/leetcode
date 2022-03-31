@@ -100,21 +100,11 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 4 ms | 8.1 MB | 2019/12/15 20:42 |
+|   |  |  | 1970/01/01 8:00 |
 
-```cpp
+```
 
-class Solution {
-public:
-    int trailingZeroes(int n) {
-        int five = 0;
-        while(n >= 5){
-            five += n/5;
-            n/=5;
-        }
-        return five;
-    }
-};
+
 
 ```
 ## My Notes - 我的笔记

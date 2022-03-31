@@ -95,29 +95,9 @@ One longest palindrome that can be built is &quot;dccaccd&quot;, whose length is
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 8 ms | 8.6 MB | 2019/10/09 20:04 |
+|   |  |  | 1970/01/01 8:00 |
 
-```cpp
-
-class Solution {
-public:
-    int longestPalindrome(string s) {
-		vector<int> v(52, 0);
- 		for (int i = 0; i < s.size(); i++) {
- 			if(isupper(s[i])) v[26 + s[i] - 'A']++;
-			else v[s[i] - 'a']++;
- 		}       
-		int ans = 0;
-		for (int i = 0; i < 52; i++) {
-			if(!(v[i] & 1)) ans += v[i];
-			else{
-				if(v[i] > 2) ans += v[i] - 1;
-			}
-		}
-		if(ans < s.size()) ans++;
-		return ans;
-    }
-};
+```
 
 
 
