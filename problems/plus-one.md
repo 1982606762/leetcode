@@ -105,11 +105,29 @@ Thus, the result should be [1,0].
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| javascript  | 68 ms | 37.7 MB | 2021/08/12 11:09 |
 
-```
+```javascript
 
+/**
+ * @param {number[]} digits
+ * @return {number[]}
+ */
+var plusOne = function(digits) {
+    let last = digits.length-1;
+    while(last>=0)
+    {
+        if(digits[last]!=9){
+            digits[last]+=1;
+            return digits;
+        }else{
+            digits[last]=0;
+            last--;
+        }
+    }
 
+    return [1].concat(digits);
+};
 
 ```
 ## My Notes - 我的笔记

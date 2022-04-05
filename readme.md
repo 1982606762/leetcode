@@ -11,7 +11,7 @@
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/04/05 11:05</b>
+  <b>Last updated: 2022/04/05 11:07</b>
   <br>
 </p>
 
@@ -150,7 +150,7 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/04/05 11:05</b>
+  <b>Last updated: 2022/04/05 11:07</b>
   <br>
 </p>
 

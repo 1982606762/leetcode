@@ -101,11 +101,17 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| javascript  | 84 ms | 41.2 MB | 2021/08/12 9:42 |
 
-```
+```javascript
 
-
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var calculate = function(s) {
+    return eval(s)
+};
 
 ```
 ## My Notes - 我的笔记
