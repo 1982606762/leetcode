@@ -108,11 +108,26 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 8 ms | 7.9 MB | 2019/11/04 20:00 |
 
-```
+```cpp
 
-
+class Solution {
+public:
+    bool isPalindrome(int x) {
+       
+        if(x<0){return false;}
+        // if(x/10==0){return true;}
+        long long temp=0,y=x;
+        while(!x==0){
+            temp=temp*10+x%10;
+            x/=10;
+        }
+      
+        if(temp==y){return true;
+        }else{return false;}
+    }
+};
 
 ```
 ## My Notes - 我的笔记

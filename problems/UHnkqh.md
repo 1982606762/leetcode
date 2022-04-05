@@ -69,33 +69,11 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| javascript  | 72 ms | 39.9 MB | 2021/09/21 18:26 |
+|   |  |  | 1970/01/01 8:00 |
 
-```javascript
+```
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
-var reverseList = function(head) {
-    let pre = null;
-    let cur = head;
-    while(cur!=null)
-    {
-        let temp = cur.next;
-        cur.next = pre;
-        pre = cur;
-        cur = temp;
-    }
-    return pre
-};
+
 
 ```
 ## My Notes - 我的笔记

@@ -75,22 +75,25 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| cpp  | 8 ms | 10.8 MB | 2020/11/05 10:16 |
+| cpp  | 0 ms | 10.4 MB | 2022/04/03 14:53 |
 
 ```cpp
 
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-       unordered_set<int> result_set; // 存放结果
-        unordered_set<int> nums_set(nums1.begin(), nums1.end());
-        for (int num : nums2) {
-            // 发现nums2的元素 在nums_set里又出现过
-            if (nums_set.find(num) != nums_set.end()) {
-                result_set.insert(num);
+        unordered_map<int,int> m;
+        vector<int> res;
+        for(int i : nums1){
+            m[i]++;
+        }
+        for(int i : nums2){
+            if(m[i]>0){
+                m.erase(i);
+                res.push_back(i);
             }
         }
-        return vector<int>(result_set.begin(), result_set.end());
+        return res;
     }
 };
 

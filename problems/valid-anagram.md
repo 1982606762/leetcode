@@ -76,27 +76,33 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| javascript  | 80 ms | 38.7 MB | 2021/10/21 11:57 |
+| cpp  | 8 ms | 7.1 MB | 2022/04/03 10:45 |
 
-```javascript
+```cpp
 
-var isAnagram = function(s, t) {
-    if (s.length !== t.length) {
-        return false;
-    }
-    const table = new Array(26).fill(0);
-    for (let i = 0; i < s.length; ++i) {
-        table[s.codePointAt(i) - 'a'.codePointAt(0)]++;
-    }
-    for (let i = 0; i < t.length; ++i) {
-        table[t.codePointAt(i) - 'a'.codePointAt(0)]--;
-        if (table[t.codePointAt(i) - 'a'.codePointAt(0)] < 0) {
-            return false;
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+    if(s.size() != t.size()) return false;
+    unordered_map<char,int> m1;
+    unordered_map<char,int> m2;
+    for(auto i : s){
+        if(m1[i]){
+            m1[i] ++;
+        } else {
+            m1[i] = 1;
         }
     }
-    return true;
+    for(auto i : t){
+        if(m2[i]){
+            m2[i] ++;
+        } else {
+            m2[i] = 1;
+        }
+    }
+    return m1 == m2;
+}
 };
-
 
 ```
 ## My Notes - 我的笔记

@@ -108,10 +108,56 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 44 ms | 10.1 MB | 2020/03/15 13:48 |
 
-```
+```cpp
 
+class Solution {
+public:
+    vector<int> luckyNumbers (vector<vector<int>>& matrix) {
+        vector<int >  Myres;//存储结果
+        int m=matrix.size();
+        if(m==0){
+            return Myres;
+        }
+        int n=matrix[0].size();
+        vector<bool > block(n,0);
+        vector<vector<bool >> tmp;//一个与matrix同大小的数组
+        for(int i=0;i<m;i++){
+            tmp.push_back(block);
+        }
+        for(int i=0;i<m;i++){     //记录每行最小数值的位置，找到后把tmp上对应位置标记出来
+            int ix=i;
+            int jx=0;
+            int imin=matrix[i][0];
+            for(int j=0;j<n;j++){
+                if(imin>=matrix[i][j]){
+                    imin=matrix[i][j];
+                    ix=i;
+                    jx=j;
+                }
+            }
+            tmp[ix][jx]=1;
+        }
+        for(int i=0;i<n;i++){       //记录每一列中最大的位置，找到后查看是否为行中最小的位置
+            int jx=i;
+            int ix=0;
+            int imax=matrix[0][i];
+            for(int j=0;j<m;j++){
+                if(imax<=matrix[j][i]){
+                    imax=matrix[j][i];
+                    ix=j;
+                    jx=i;
+                }         
+            }
+            if(tmp[ix][jx]==1){     //如果是，那么就存储下来
+                Myres.push_back(matrix[ix][jx]);
+            }
+        }
+        return Myres;
+        
+    }
+};
 
 
 ```

@@ -68,10 +68,58 @@ sentence = &quot;jesslookedjustliketimherbrother&quot;
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 744 ms | 195.6 MB | 2020/07/09 17:09 |
 
-```
+```cpp
 
+class Solution {
+public:
+    /*void dfs(unordered_set<string>& maps, string sentence, int cnt, int& ans)
+    {
+        if(sentence.size() == 0)
+        {
+            ans = min(ans,cnt);
+            return ;
+        }
+        for(int i = 1; i<=sentence.size(); i++)
+        {
+            string temp = sentence.substr(0,i);
+            if(maps.find(temp) != maps.end())
+                dfs(maps,sentence.substr(i,sentence.size()-i),cnt,ans);
+            else
+                dfs(maps,sentence.substr(i,sentence.size()-i),cnt+1,ans);
+        }
+        return ;
+    }*/
+    int respace(vector<string>& dictionary, string sentence) {
+        //int ans = 1e9;
+        //unordered_set<string> maps;
+        //for(auto t : dictionary)
+            //maps.insert(t);
+        // dfs(maps,sentence,0,ans);
+        
+        int sen_len = sentence.size();
+        vector<int> dp(sen_len+1);      //dp[i]表示sentence前i个字符里面未识别的字符数
+
+        dp[0] = 0;
+        for(int i = 1; i<=sen_len; i++)
+        {
+            dp[i] = dp[i-1]+1;
+            for(int j=0; j<dictionary.size(); j++)
+            {
+                int len = dictionary[j].size();
+                if(len <= i)
+                {
+                    if(sentence.substr(i-len,len)==dictionary[j])
+                        dp[i]=min(dp[i],dp[i-len]);
+                }
+            }
+
+        }
+
+        return dp[sen_len];
+    }
+};
 
 
 ```

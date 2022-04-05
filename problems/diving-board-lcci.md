@@ -63,11 +63,34 @@ k = 3
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 20 ms | 19.8 MB | 2020/07/08 12:21 |
 
-```
+```cpp
 
-
+class Solution {
+public:
+    vector<int> divingBoard(int shorter, int longer, int k) {
+        vector<int> ans;
+        if(k==0)
+        {
+            return ans;
+        }
+        else if(shorter==longer)
+        {
+            ans.push_back(shorter*k);
+            return ans;
+        }else{
+            int temp = shorter*k;
+            ans.push_back(temp);
+        for(int i=k;i>0;i--)
+        {
+            temp=temp-shorter+longer;
+            ans.push_back(temp);
+        }
+        return ans;
+        }
+    }
+};
 
 ```
 ## My Notes - 我的笔记

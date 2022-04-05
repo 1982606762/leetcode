@@ -105,27 +105,25 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| javascript  | 76 ms | 40.3 MB | 2021/10/22 21:46 |
+| cpp  | 16 ms | 11.7 MB | 2022/04/03 16:28 |
 
-```javascript
+```cpp
 
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-var twoSum = function(nums, target) {
-    const map = new Map();
-    if(Array.isArray(nums)){
-        for(let i = 0;i<nums.length;i++)
-        {
-            if(map.has(target - nums[i]))
-            {
-                return [i,map.get(target - nums[i])]
-            }else{
-                map.set(nums[i],i)
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int,int> m;
+        vector<int> ans;
+        for(int i = 0;i< nums.size();i++){
+            if(m.find(nums[i])!=m.end()){
+                ans.push_back(i);
+                ans.push_back(m[nums[i]]);
+            }
+            else{
+                m.insert({target - nums[i],i});
             }
         }
+        return ans;
     }
 };
 

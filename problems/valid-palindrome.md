@@ -90,11 +90,47 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 8 ms | 7.3 MB | 2020/06/19 23:01 |
 
-```
+```cpp
 
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        if(s.empty()) return true;
+        int l = 0;
+        int r = s.size()-1;
+        while(l < r) {
+            if(!valid(s[l])) {
+                ++l;
+                continue;
+            }
+            if(!valid(s[r])) {
+                --r;
+                continue;
+            }
+            if(!isSame(s[l], s[r]))
+                return false;
+            ++l;
+            --r;
+        }
+        return true;
+    }
+private:
+    bool valid(char c) {
+        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
+            return true;
+        return false;
+    }
 
+    bool isSame(char c1, char c2) {
+        if(c1 >= 'A' && c1 <= 'Z')
+            c1 = (char)(c1-'A'+'a');
+        if(c2 >= 'A' && c2 <= 'Z')
+            c2 = (char)(c2-'A'+'a');
+        return c1 == c2;
+    }
+};
 
 ```
 ## My Notes - 我的笔记

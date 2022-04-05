@@ -122,33 +122,11 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-| javascript  | 76 ms | 37.9 MB | 2021/08/12 10:36 |
+|   |  |  | 1970/01/01 8:00 |
 
-```javascript
+```
 
-/**
- * @param {number[]} nums1
- * @param {number} m
- * @param {number[]} nums2
- * @param {number} n
- * @return {void} Do not return anything, modify nums1 in-place instead.
- */
-var merge = function (nums1, m, nums2, n) {
-    let last = m-- + --n;
-    while (n>=0||m>=0) {
-        if(n<0){
-            nums1[last--] = nums1[m--];
-        }else if(m<0){
-            nums1[last--] = nums2[n--];
-        }
-        else if (nums1[m] >= nums2[n]) {
-            nums1[last--] = nums1[m--];
-        } else {
-            nums1[last--] = nums2[n--];
-        }
-    }
-    
-};
+
 
 ```
 ## My Notes - 我的笔记

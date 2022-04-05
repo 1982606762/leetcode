@@ -97,11 +97,28 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 4 ms | 7.8 MB | 2019/11/02 18:34 |
 
-```
+```cpp
 
-
+class Solution {
+public:
+    int reverse(int x) {
+       long long temp = 0;
+        int max= 2147483647;
+        int min = -2147483648;
+        while(x!=0){
+            temp = temp*10+x%10;
+            x/=10;
+        }
+        if(temp>max||temp<min){
+            return 0;
+        }
+        else{
+            return (int)temp;
+        }
+    }
+};
 
 ```
 ## My Notes - 我的笔记

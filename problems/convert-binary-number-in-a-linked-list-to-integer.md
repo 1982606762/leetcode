@@ -99,11 +99,31 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| cpp  | 8 ms | 9.7 MB | 2020/03/15 16:13 |
 
-```
+```cpp
 
-
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+   int getDecimalValue(ListNode* head) {
+        ListNode *cur = head;
+        int res = 0;
+        while(cur)
+        {
+            res = res*2 + cur->val;
+            cur = cur->next;
+        }
+        return res;
+    }
+};
 
 ```
 ## My Notes - 我的笔记

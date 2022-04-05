@@ -81,10 +81,21 @@
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| java  | 1 ms | 38.6 MB | 2020/07/08 21:34 |
 
-```
+```java
 
+class Solution {
+    public boolean canMakeArithmeticProgression(int[] arr) {
+        if(arr.length <= 2) return true;
+        Arrays.sort(arr);
+        int dis = arr[1] - arr[0];
+        for(int i = 2; i < arr.length; i ++){
+            if(arr[i] - arr[i - 1] != dis) return false; 
+        }
+        return true;
+    }
+}
 
 
 ```

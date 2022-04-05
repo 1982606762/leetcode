@@ -132,10 +132,31 @@ The last moment when an ant was on the plank is t = 4 seconds. After that, it fa
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| java  | 1 ms | 38.7 MB | 2020/07/08 21:35 |
 
-```
+```java
 
+/*
+@v7fgg
+执行用时：1 ms, 在所有 Java 提交中击败了100.00%的用户
+内存消耗：39.9 MB, 在所有 Java 提交中击败了100.00%的用户
+2020年7月6日 10:33
+*/
+class Solution {
+    public int getLastMoment(int n, int[] left, int[] right) {
+        int zuoMax=0;
+        int youMax=0;
+        for(int i=0;i<left.length;i++){
+            zuoMax=Math.max(zuoMax,left[i]);
+        }
+        for(int i=0;i<right.length;i++){
+            if(n-right[i]>youMax){
+                youMax=n-right[i];
+            }
+        }
+        return Math.max(zuoMax,youMax);
+    }
+}
 
 
 ```

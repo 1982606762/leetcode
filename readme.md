@@ -4,14 +4,14 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/97/2573-Solved/Total-blue.svg">
-  <img src="https://img.shields.io/badge/Easy-51-green.svg">
-  <img src="https://img.shields.io/badge/Medium-39-orange.svg">
+  <img src="https://img.shields.io/badge/102/2583-Solved/Total-blue.svg">
+  <img src="https://img.shields.io/badge/Easy-54-green.svg">
+  <img src="https://img.shields.io/badge/Medium-41-orange.svg">
   <img src="https://img.shields.io/badge/Hard-7-red.svg">
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/03/31 13:37</b>
+  <b>Last updated: 2022/04/05 11:05</b>
   <br>
 </p>
 
@@ -31,6 +31,14 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 # All Accepted Problems
 |  #  | Title |  Title-CN  | Difficulty | Last Submission Time |
 |:---:|:-----:|:-----:|:----------:|:----------:|
+| 383 | [Ransom Note](problems/ransom-note.md) | [赎金信](problems/ransom-note.md) | ![](./imgs/easy.png) | 2022/04/03 18:39
+| 454 | [4Sum II](problems/4sum-ii.md) | [四数相加 II](problems/4sum-ii.md) | ![](./imgs/medium.png) | 2022/04/03 16:42
+| 1 | [Two Sum](problems/two-sum.md) | [两数之和](problems/two-sum.md) | ![](./imgs/easy.png) | 2022/04/03 16:28
+| 202 | [Happy Number](problems/happy-number.md) | [快乐数](problems/happy-number.md) | ![](./imgs/easy.png) | 2022/04/03 15:19
+| 350 | [Intersection of Two Arrays II](problems/intersection-of-two-arrays-ii.md) | [两个数组的交集 II](problems/intersection-of-two-arrays-ii.md) | ![](./imgs/easy.png) | 2022/04/03 15:07
+| 349 | [Intersection of Two Arrays](problems/intersection-of-two-arrays.md) | [两个数组的交集](problems/intersection-of-two-arrays.md) | ![](./imgs/easy.png) | 2022/04/03 14:53
+| 242 | [Valid Anagram](problems/valid-anagram.md) | [有效的字母异位词](problems/valid-anagram.md) | ![](./imgs/easy.png) | 2022/04/03 10:45
+| 142 | [Linked List Cycle II](problems/linked-list-cycle-ii.md) | [环形链表 II](problems/linked-list-cycle-ii.md) | ![](./imgs/medium.png) | 2022/03/31 14:25
 | 面试题 02.07 | [Intersection of Two Linked Lists LCCI](problems/intersection-of-two-linked-lists-lcci.md) | [链表相交](problems/intersection-of-two-linked-lists-lcci.md) | ![](./imgs/easy.png) | 2022/03/31 13:02
 | 24 | [Swap Nodes in Pairs](problems/swap-nodes-in-pairs.md) | [两两交换链表中的节点](problems/swap-nodes-in-pairs.md) | ![](./imgs/medium.png) | 2022/03/31 10:17
 | 206 | [Reverse Linked List](problems/reverse-linked-list.md) | [反转链表](problems/reverse-linked-list.md) | ![](./imgs/easy.png) | 2022/03/30 14:04
@@ -81,8 +89,6 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 | 236 | [Lowest Common Ancestor of a Binary Tree](problems/lowest-common-ancestor-of-a-binary-tree.md) | [二叉树的最近公共祖先](problems/lowest-common-ancestor-of-a-binary-tree.md) | ![](./imgs/medium.png) | 2021/11/28 10:39
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](problems/lowest-common-ancestor-of-a-binary-search-tree.md) | [二叉搜索树的最近公共祖先](problems/lowest-common-ancestor-of-a-binary-search-tree.md) | ![](./imgs/easy.png) | 2021/11/27 16:29
 | 98 | [Validate Binary Search Tree](problems/validate-binary-search-tree.md) | [验证二叉搜索树](problems/validate-binary-search-tree.md) | ![](./imgs/medium.png) | 2021/11/25 11:51
-| 1 | [Two Sum](problems/two-sum.md) | [两数之和](problems/two-sum.md) | ![](./imgs/easy.png) | 2021/10/22 21:46
-| 242 | [Valid Anagram](problems/valid-anagram.md) | [有效的字母异位词](problems/valid-anagram.md) | ![](./imgs/easy.png) | 2021/10/21 11:57
 | 703 | [Kth Largest Element in a Stream](problems/kth-largest-element-in-a-stream.md) | [数据流中的第 K 大元素](problems/kth-largest-element-in-a-stream.md) | ![](./imgs/easy.png) | 2021/10/10 12:13
 | 20 | [Valid Parentheses](problems/valid-parentheses.md) | [有效的括号](problems/valid-parentheses.md) | ![](./imgs/easy.png) | 2021/09/23 11:36
 | 725 | [Split Linked List in Parts](problems/split-linked-list-in-parts.md) | [分隔链表](problems/split-linked-list-in-parts.md) | ![](./imgs/medium.png) | 2021/09/23 10:31
@@ -105,7 +111,6 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 | 509 | [Fibonacci Number](problems/fibonacci-number.md) | [斐波那契数](problems/fibonacci-number.md) | ![](./imgs/easy.png) | 2021/07/13 22:51
 | 1356 | [Sort Integers by The Number of 1 Bits](problems/sort-integers-by-the-number-of-1-bits.md) | [根据数字二进制下 1 的数目排序](problems/sort-integers-by-the-number-of-1-bits.md) | ![](./imgs/easy.png) | 2020/11/06 10:25
 | 4 | [Median of Two Sorted Arrays](problems/median-of-two-sorted-arrays.md) | [寻找两个正序数组的中位数](problems/median-of-two-sorted-arrays.md) | ![](./imgs/hard.png) | 2020/11/06 10:05
-| 349 | [Intersection of Two Arrays](problems/intersection-of-two-arrays.md) | [两个数组的交集](problems/intersection-of-two-arrays.md) | ![](./imgs/easy.png) | 2020/11/05 10:16
 | 140 | [Word Break II](problems/word-break-ii.md) | [单词拆分 II](problems/word-break-ii.md) | ![](./imgs/hard.png) | 2020/11/05 9:41
 | 127 | [Word Ladder](problems/word-ladder.md) | [单词接龙](problems/word-ladder.md) | ![](./imgs/hard.png) | 2020/11/05 9:20
 | 57 | [Insert Interval](problems/insert-interval.md) | [插入区间](problems/insert-interval.md) | ![](./imgs/medium.png) | 2020/11/04 11:06
@@ -138,14 +143,14 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/97/2573-Solved/Total-blue.svg">
-  <img src="https://img.shields.io/badge/Easy-51-green.svg">
-  <img src="https://img.shields.io/badge/Medium-39-orange.svg">
+  <img src="https://img.shields.io/badge/102/2583-Solved/Total-blue.svg">
+  <img src="https://img.shields.io/badge/Easy-54-green.svg">
+  <img src="https://img.shields.io/badge/Medium-41-orange.svg">
   <img src="https://img.shields.io/badge/Hard-7-red.svg">
 </p>
 <h3 align="center">My accepted leetcode solutions</h3>
 <p align="center">
-  <b>Last updated: 2022/03/31 13:37</b>
+  <b>Last updated: 2022/04/05 11:05</b>
   <br>
 </p>
 
@@ -165,6 +170,14 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 # All Accepted Problems
 |  #  | Title |  Title-CN  | Difficulty | Last Submission Time |
 |:---:|:-----:|:-----:|:----------:|:----------:|
+| 383 | [Ransom Note](problems/ransom-note.md) | [赎金信](problems/ransom-note.md) | ![](./imgs/easy.png) | 2022/04/03 18:39
+| 454 | [4Sum II](problems/4sum-ii.md) | [四数相加 II](problems/4sum-ii.md) | ![](./imgs/medium.png) | 2022/04/03 16:42
+| 1 | [Two Sum](problems/two-sum.md) | [两数之和](problems/two-sum.md) | ![](./imgs/easy.png) | 2022/04/03 16:28
+| 202 | [Happy Number](problems/happy-number.md) | [快乐数](problems/happy-number.md) | ![](./imgs/easy.png) | 2022/04/03 15:19
+| 350 | [Intersection of Two Arrays II](problems/intersection-of-two-arrays-ii.md) | [两个数组的交集 II](problems/intersection-of-two-arrays-ii.md) | ![](./imgs/easy.png) | 2022/04/03 15:07
+| 349 | [Intersection of Two Arrays](problems/intersection-of-two-arrays.md) | [两个数组的交集](problems/intersection-of-two-arrays.md) | ![](./imgs/easy.png) | 2022/04/03 14:53
+| 242 | [Valid Anagram](problems/valid-anagram.md) | [有效的字母异位词](problems/valid-anagram.md) | ![](./imgs/easy.png) | 2022/04/03 10:45
+| 142 | [Linked List Cycle II](problems/linked-list-cycle-ii.md) | [环形链表 II](problems/linked-list-cycle-ii.md) | ![](./imgs/medium.png) | 2022/03/31 14:25
 | 面试题 02.07 | [Intersection of Two Linked Lists LCCI](problems/intersection-of-two-linked-lists-lcci.md) | [链表相交](problems/intersection-of-two-linked-lists-lcci.md) | ![](./imgs/easy.png) | 2022/03/31 13:02
 | 24 | [Swap Nodes in Pairs](problems/swap-nodes-in-pairs.md) | [两两交换链表中的节点](problems/swap-nodes-in-pairs.md) | ![](./imgs/medium.png) | 2022/03/31 10:17
 | 206 | [Reverse Linked List](problems/reverse-linked-list.md) | [反转链表](problems/reverse-linked-list.md) | ![](./imgs/easy.png) | 2022/03/30 14:04
@@ -215,8 +228,6 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 | 236 | [Lowest Common Ancestor of a Binary Tree](problems/lowest-common-ancestor-of-a-binary-tree.md) | [二叉树的最近公共祖先](problems/lowest-common-ancestor-of-a-binary-tree.md) | ![](./imgs/medium.png) | 2021/11/28 10:39
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](problems/lowest-common-ancestor-of-a-binary-search-tree.md) | [二叉搜索树的最近公共祖先](problems/lowest-common-ancestor-of-a-binary-search-tree.md) | ![](./imgs/easy.png) | 2021/11/27 16:29
 | 98 | [Validate Binary Search Tree](problems/validate-binary-search-tree.md) | [验证二叉搜索树](problems/validate-binary-search-tree.md) | ![](./imgs/medium.png) | 2021/11/25 11:51
-| 1 | [Two Sum](problems/two-sum.md) | [两数之和](problems/two-sum.md) | ![](./imgs/easy.png) | 2021/10/22 21:46
-| 242 | [Valid Anagram](problems/valid-anagram.md) | [有效的字母异位词](problems/valid-anagram.md) | ![](./imgs/easy.png) | 2021/10/21 11:57
 | 703 | [Kth Largest Element in a Stream](problems/kth-largest-element-in-a-stream.md) | [数据流中的第 K 大元素](problems/kth-largest-element-in-a-stream.md) | ![](./imgs/easy.png) | 2021/10/10 12:13
 | 20 | [Valid Parentheses](problems/valid-parentheses.md) | [有效的括号](problems/valid-parentheses.md) | ![](./imgs/easy.png) | 2021/09/23 11:36
 | 725 | [Split Linked List in Parts](problems/split-linked-list-in-parts.md) | [分隔链表](problems/split-linked-list-in-parts.md) | ![](./imgs/medium.png) | 2021/09/23 10:31
@@ -239,7 +250,6 @@ My LeetCode homepage : [mrz-18 - Profile - LeetCode](https://leetcode-cn.com/mrz
 | 509 | [Fibonacci Number](problems/fibonacci-number.md) | [斐波那契数](problems/fibonacci-number.md) | ![](./imgs/easy.png) | 2021/07/13 22:51
 | 1356 | [Sort Integers by The Number of 1 Bits](problems/sort-integers-by-the-number-of-1-bits.md) | [根据数字二进制下 1 的数目排序](problems/sort-integers-by-the-number-of-1-bits.md) | ![](./imgs/easy.png) | 2020/11/06 10:25
 | 4 | [Median of Two Sorted Arrays](problems/median-of-two-sorted-arrays.md) | [寻找两个正序数组的中位数](problems/median-of-two-sorted-arrays.md) | ![](./imgs/hard.png) | 2020/11/06 10:05
-| 349 | [Intersection of Two Arrays](problems/intersection-of-two-arrays.md) | [两个数组的交集](problems/intersection-of-two-arrays.md) | ![](./imgs/easy.png) | 2020/11/05 10:16
 | 140 | [Word Break II](problems/word-break-ii.md) | [单词拆分 II](problems/word-break-ii.md) | ![](./imgs/hard.png) | 2020/11/05 9:41
 | 127 | [Word Ladder](problems/word-ladder.md) | [单词接龙](problems/word-ladder.md) | ![](./imgs/hard.png) | 2020/11/05 9:20
 | 57 | [Insert Interval](problems/insert-interval.md) | [插入区间](problems/insert-interval.md) | ![](./imgs/medium.png) | 2020/11/04 11:06

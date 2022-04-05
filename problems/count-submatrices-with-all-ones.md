@@ -110,10 +110,44 @@ Total number of rectangles = 8 + 5 + 2 + 4 + 2 + 2 + 1 = 24.
 
 | Language | Runtime | Memory | Submission Time |
 |:---:|:---:|:---:|:---:|
-|   |  |  | 1970/01/01 8:00 |
+| java  | 11 ms | 39.5 MB | 2020/07/08 21:36 |
 
-```
+```java
 
+/*
+@v7fgg
+执行用时：13 ms, 在所有 Java 提交中击败了100.00%的用户
+内存消耗：40.7 MB, 在所有 Java 提交中击败了100.00%的用户
+2020年7月5日 14:22
+*/
+class Solution {
+    public int numSubmat(int[][] mat) {
+        int ans=0;
+        int m=mat.length;
+        int n=mat[0].length;
+        int maxZ[][]=new int[m][n];
+        for(int i=0;i<m;i++){
+            int maxZuo=0;
+            for(int j=0;j<n;j++){
+                if(mat[i][j]==1){
+                    maxZuo++;
+                }
+                else{maxZuo=0;}
+                maxZ[i][j]=maxZuo;
+            }
+        }
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                int rec=150;
+                for(int k=i;k>=0;k--){
+                    rec=Math.min(rec,maxZ[k][j]);
+                    ans+=rec;
+                }
+            }
+        }
+        return ans;
+    }
+}
 
 
 ```
